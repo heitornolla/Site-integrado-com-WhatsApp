@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Telasko Lanches - Heitor</title>
+    <style>
+        body {
+            background: #e5e5e5;
+            font-family: "Roboto";
+        }
+        .main {
+            background: #cf2b2b;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 #bbbbbb;
+        }
+        .produtos {
+            background: white;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            box-shadow: 0 0 10px 0 #bbbbbb;
+            cursor: pointer;
+            border: 5px solid white;
+        }
+        h1 {
+            margin: 0;
+            font-family: "Righteous";
+            font-weight: normal;
+        }
+        
+        h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        
+        h3 {
+            font-size: 30px;
+            margin-bottom: 5px;
+            font-family: "Righteous";
+            font-weight: normal;
+        }
+        
+        h4 {
+            margin-top: 0px;
+            margin-bottom: 5px;;
+            font-size: 20px;
+        }
+        
+        img {
+            width: 90px;
+            max-height: 100px;
+            border-radius: 5px;
+            float: right;
+        }
+        
+        P {
+            margin: 15px 0 0 0;
+        }
+        
+        .botao {
+            background: #0b940b;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+            margin-radius: 50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Telasko Lanches</h1>
+      <h2>Seu pedido até você em 15 minutos! (Feito por Heitor Pavani Nolla)</h2>
+    </div>
+    <h3> Escolha seu lanchão!</h3>
+    <div id="Guari" class="produtos" onclick="escolheGuari()">
+        <img src="https://s2.glbimg.com/BgFMHwXzkqT4bi6bHBhkQjZMnVY=/0x0:1000x666/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/b/8/bRD3HmRMa75gefRLZRHA/hamburguer-com-geleia-de-bacon.jpeg">
+        <h4> HamburGuari</h4>
+        <p>Aquele lanchinho de carne sem frescura!</p>
+        <p><strong>R$20,00</strong></p>
+    </div>
+        <div id="salada" class="produtos" onclick="escolheSalada()">
+        <img src="https://assets.unileversolutions.com/recipes-v2/230412.jpg">
+        <h4> X-Salada de cria</h4>
+        <p>Tem em todo lugar, mas o nosso é o melhor, confia</p>
+        <p><strong>R$24,00</strong></p>
+    </div>
+    <div id="frango" class="produtos" onclick="escolheFrango()">
+        <img src="https://i.pinimg.com/originals/a8/62/73/a862732d6ca2536588c5e91900af1ec2.jpg">
+        <h4> Franguinho chave</h4>
+        <p>Acompanha uma saladinha da boa</p>
+        <p><strong>R$18,00</strong></p>
+    </div>
+    <h3>Vocês pediram, nós atendemos! Vai uma batatinha?</h3>
+        <div id="bp" class="produtos" onclick="escolheBP()">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_945181-MLB51404712095_092022-F.webp">
+        <h4> Batata simples pequena</h4>
+        <p>100g de batata pra dar aquele charme</p>
+        <p><strong>R$5,00</strong></p>
+    </div>
+        <div id="bm" class="produtos" onclick="escolheBM()">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_849062-MLB49448176928_032022-F.webp">
+        <h4> Batata simples média</h4>
+        <p>Tá com fome? 200g de batatinha na faixa</p>
+        <p><strong>R$7,50</strong></p>
+    </div>
+        <div id="bg" class="produtos" onclick="escolheBG()">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_684153-MLB47724297331_102021-F.webp">
+        <h4> Batata simples grande</h4>
+        <p>Vai com calma que essas coisa engorda... Acredita...</p>
+        <p><strong>R$10,00</strong></p>
+    </div>
+        <div id="br" class="produtos" onclick="escolheBR()">
+        <img src="https://i.ytimg.com/vi/Sx-YDhYjAEI/maxresdefault.jpg">
+        <h4> Batata rústica</h4>
+        <p>150g da pura tentação</p>
+        <p><strong>R$10,00</strong></p>
+    </div>
+    <h3> Uma bebidinha ae pae?</h3>
+        <div id="coca2l" class="produtos" onclick="escolheCoca2L()">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_674221-MLB48202658082_112021-F.webp">
+        <h4> Cocona 2L</h4>
+        <p>Essa é forte</p>
+        <p><strong>R$12,00</strong></p>
+    </div>
+        <div id="coca600" class="produtos" onclick="escolheCoca600()">
+        <img src="https://a-static.mlcdn.com.br/800x560/refrigerante-coca-cola-600ml-coca-cola/beachpub/3c80c4d2c0c511ec9bbd4201ac18506b/f95705d839135e70f928fd7e4a3a2f04.jpeg">
+        <h4> Coquinha 600ml</h4>
+        <p>Pra dividir ou tomar sozinho, cê que sabe</p>
+        <p><strong>R$7,00</strong></p>
+    </div>
+        <div id="cocalata" class="produtos" onclick="escolheCocaLata()">
+        <img src="https://a-static.mlcdn.com.br/800x560/refrigerante-coca-cola-lata-350ml/drogariaaraujosa/262307/69a756de23fa4d9f90171ef5ab84b554.jpeg">
+        <h4> Coquinha gelada</h4>
+        <p>Boa demais, num tem erro</p>
+        <p><strong>R$4,00</strong></p>
+    </div>
+    <div id="guarana" class="produtos" onclick="escolheGuarana()">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_877008-MLU48097822125_112021-F.webp">
+        <h4> Guaraná de respeito</h4>
+        <p>Meu refri favorito, pede ae</p>
+        <p><strong>R$4,00</strong></p>
+    </div>
+        <div id="agua" class="produtos" onclick="escolheAgua()">
+        <img src="https://img.kalunga.com.br/fotosdeprodutos/348219d.jpg">
+        <h4> Água mineral 500ml</h4>
+        <p>Água com lanche? Namoral?</p>
+        <p><strong>R$2,50</strong></p>
+    </div>
+    <h3> Sobremesa meu fi?</h3>
+        <div id="petit" class="produtos" onclick="escolhePetit()">
+        <img src="https://i.pinimg.com/originals/41/b4/59/41b459412fdaf30fc869e2b9696f2ce0.jpg">
+        <h4> Especial do Dr. Telasko</h4>
+        <p>Aquele Petit Gateau bonito com sorvetin de creme</p>
+        <p><strong>R$10,00</strong></p>
+    </div>
+        <div id="brownie" class="produtos" onclick="escolheBrownie()">
+        <img src="https://lifemadesimplebakes.com/wp-content/uploads/2014/06/brownies-resize-7.jpg">
+        <h4> Brownie</h4>
+        <p>Não tem erro né?</p>
+        <p><strong>R$7,00</strong></p>
+    </div>
+    <div class="botao" onclick="finalizarPedido()">
+        Finalizar pedido
+    </div>
+    <script>
+    let burguer;
+    let batata;
+    let bebida;
+    let sobremesa;
+    
+    function escolheGuari() {
+        document.getElementById("Guari").style.borderColor = "green";
+        document.getElementById("salada").style.borderColor = "white";
+        document.getElementById("frango").style.borderColor = "white";
+        burguer = "HamburGuari";
+    }
+    function escolheSalada() {
+        document.getElementById("salada").style.borderColor = "green";
+        document.getElementById("Guari").style.borderColor = "white";
+        document.getElementById("frango").style.borderColor = "white";
+        burguer = "X-Salada";
+    }
+    function escolheFrango() {
+        document.getElementById("frango").style.borderColor = "green";
+        document.getElementById("Guari").style.borderColor = "white";
+        document.getElementById("salada").style.borderColor = "white";
+        burguer = "Frango"
+    }
+    function escolheBP() {
+        document.getElementById("bp").style.borderColor = "green";
+        document.getElementById("bm").style.borderColor = "white";
+        document.getElementById("bg").style.borderColor = "white";
+        document.getElementById("br").style.borderColor = "white";
+        batata = "Batata Pequena";
+    }
+    function escolheBM() {
+        document.getElementById("bp").style.borderColor = "white";
+        document.getElementById("bm").style.borderColor = "green";
+        document.getElementById("bg").style.borderColor = "white";
+        document.getElementById("br").style.borderColor = "white";
+        batata = "Batata Média";
+    }
+    function escolheBG() {
+        document.getElementById("bp").style.borderColor = "white";
+        document.getElementById("bm").style.borderColor = "white";
+        document.getElementById("bg").style.borderColor = "green";
+        document.getElementById("br").style.borderColor = "white";
+        batata = "Batata Grande";
+    }
+    function escolheBR() {
+        document.getElementById("bp").style.borderColor = "white";
+        document.getElementById("bm").style.borderColor = "white";
+        document.getElementById("bg").style.borderColor = "white";
+        document.getElementById("br").style.borderColor = "green";
+        batata = "Batata Rústica";
+    }
+    function escolheCoca2L() {
+        document.getElementById("coca2l").style.borderColor = "green";
+        document.getElementById("coca600").style.borderColor = "white";
+        document.getElementById("cocalata").style.borderColor = "white";
+        document.getElementById("guarana").style.borderColor = "white";
+        document.getElementById("agua").style.borderColor = "white";
+        bebida = "Coca 2L";
+    }
+    function escolheCoca600() {
+        document.getElementById("coca2l").style.borderColor = "white";
+        document.getElementById("coca600").style.borderColor = "green";
+        document.getElementById("cocalata").style.borderColor = "white";
+        document.getElementById("guarana").style.borderColor = "white";
+        document.getElementById("agua").style.borderColor = "white";
+        bebida = "Coca 600ml";
+    }
+    function escolheCocaLata() {
+        document.getElementById("coca2l").style.borderColor = "white";
+        document.getElementById("coca600").style.borderColor = "white";
+        document.getElementById("cocalata").style.borderColor = "green";
+        document.getElementById("guarana").style.borderColor = "white";
+        document.getElementById("agua").style.borderColor = "white";
+        bebida = "Coca lata";
+    }
+    function escolheGuarana() {
+        document.getElementById("coca2l").style.borderColor = "white";
+        document.getElementById("coca600").style.borderColor = "white";
+        document.getElementById("cocalata").style.borderColor = "white";
+        document.getElementById("guarana").style.borderColor = "green";
+        document.getElementById("agua").style.borderColor = "white";
+        bebida = "Guaraná";
+    }
+    function escolheAgua() {
+        document.getElementById("coca2l").style.borderColor = "white";
+        document.getElementById("coca600").style.borderColor = "white";
+        document.getElementById("cocalata").style.borderColor = "white";
+        document.getElementById("guarana").style.borderColor = "white";
+        document.getElementById("agua").style.borderColor = "green";
+        bebida = "Água";
+    }
+    function escolhePetit() {
+        document.getElementById("petit").style.borderColor = "green";
+        document.getElementById("brownie").style.borderColor = "white";
+        sobremesa = "Especial Dr. Telasko";
+    }
+    function escolheBrownie() {
+        document.getElementById("petit").style.borderColor = "white";
+        document.getElementById("brownie").style.borderColor = "green";
+        sobremesa = "Brownie";
+    }
+    function finalizarPedido() {
+        let mensagem;
+        burguer === undefined ? burguer = "Sem hamburgueres hoje" : burguer = burguer;
+        batata === undefined ? batata = "sem batatinhas" : batata = batata;
+        bebida === undefined ? bebida = "nada pra beber" : bebida = bebida;
+        sobremesa === undefined ? sobremesa = "to tranquilo de sobremesa" : sobremesa = sobremesa;
+        mensagem = "Salve família! Anota o pedidão pra mim por favor: " +
+        burguer + ", " + batata + ", " + bebida + ", " + sobremesa + ".";
+        window.open("https://wa.me/+5519991182254?text=" + mensagem);
+    }
+    </script>
+  </body>
+</html>
